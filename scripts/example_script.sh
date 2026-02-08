@@ -4,18 +4,19 @@
 
 # Display usage information
 usage() {
+    local exit_code=${1:-1}
     echo "Usage: $0 [options]"
     echo "Options:"
     echo "  -h, --help     Show this help message"
     echo "  -v, --version  Show version information"
-    exit 1
+    exit $exit_code
 }
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
     case $1 in
         -h|--help)
-            usage
+            usage 0
             ;;
         -v|--version)
             echo "Example Script v1.0.0"
@@ -23,7 +24,7 @@ while [[ $# -gt 0 ]]; do
             ;;
         *)
             echo "Unknown option: $1"
-            usage
+            usage 1
             ;;
     esac
     shift
