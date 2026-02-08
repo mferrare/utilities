@@ -1,0 +1,8 @@
+# This file contains the borg passphrase. There should
+# be only one uncommented line that contains the passphrase
+# the backup script will only read the first uncommented line
+# 
+# IMPORTANT
+# - This file should be in /root/bin. The backup script assumes this
+# - MAKE SURE THIS FILE IS MODE 0400!
+borg_passphrase_goes_here
