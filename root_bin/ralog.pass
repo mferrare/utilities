@@ -1,1 +1,8 @@
-password_removed
+# This file contains the Supabase postgres password. There should
+# be only one uncommented line that contains the password.
+# The ralog_db_backup script will only read the first uncommented line
+# 
+# IMPORTANT
+# - This file should be in in the same directory as ralog_db_backup.sh.
+# - MAKE SURE THIS FILE IS MODE 0400!
+db_password_goes_here
