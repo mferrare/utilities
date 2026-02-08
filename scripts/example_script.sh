@@ -33,3 +33,5 @@ done
 # Main script logic
 echo "Example utility script running..."
 echo "This is a template for creating your own utility scripts."
+
+exit 0
